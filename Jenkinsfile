@@ -34,7 +34,7 @@ pipeline {
             steps {
                 echo 'Awaiting manual approval...'
                 sleep(time: 10, unit: 'SECONDS')
-                echo 'Manual approval received, continuing...'
+                echo 'Manual approval received, continuing to Deployment stage..'
             }
         }
         stage('Deploy to Production') {
